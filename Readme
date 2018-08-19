@@ -1,0 +1,12 @@
+Create the Dockerfile for the postgres service
+
+Build and run the Docker containers
+
+ docker-compose down
+ docker-compose build
+ docker-compose up -d
+
+Create or re-initialize the database
+
+ docker-compose run --rm web python ./instance/db_create.py
+
